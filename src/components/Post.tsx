@@ -30,7 +30,7 @@ interface PostProps {
 }
 
 export function Post({ author, publishedAt, content }: PostProps) {
-  const [comments, setComments] = useState(['Post muito bacana!'])
+  const [comments, setComments] = useState(['Parabéns, continue evoluindo !'])
   const [newCommentText, setNewCommentText] = useState('')
 
   const publishedDateFormatted = format(publishedAt, "d LLLL 'ás' HH'h'mm", {
@@ -93,7 +93,9 @@ export function Post({ author, publishedAt, content }: PostProps) {
           } else if (item.type === 'link') {
             return (
               <p key={item.content}>
-                <a href="https://www.github.com/maike-k">{item.content}</a>
+                <a href="https://www.github.com/maike-k " target="_blank">
+                  {item.content}
+                </a>
               </p>
             )
           }
@@ -116,7 +118,6 @@ export function Post({ author, publishedAt, content }: PostProps) {
           </button>
         </footer>
       </form>
-
       <div className={styles.commentList}>
         {comments.map(comment => {
           return (

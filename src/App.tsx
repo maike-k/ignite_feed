@@ -5,8 +5,6 @@ import { Post } from './components/Post'
 
 // styles
 import styles from './App.module.css'
-// Desafio
-// Receber estes dados de um banco de dados ou de uma API.
 
 const posts = [
   {
@@ -20,31 +18,11 @@ const posts = [
       { type: 'paragraph', content: 'Fala galera 👋' },
       {
         type: 'paragraph',
-        content:
-          'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz  no NLW Return, evento da Rocketseat. O nome do projeto é IgniteFeed 🚀'
+        content: 'Acabei de subir mais um projeto no meu portifolio 🚀'
       },
       { type: 'link', content: 'maike-k/developer' }
     ],
-    publishedAt: new Date('2022-08-25 10:13')
-  },
-
-  {
-    id: 2,
-    author: {
-      avatarUrl: 'https://github.com/diego3g.png',
-      name: 'Diego Fernandes',
-      role: 'CTO @Rocketseat'
-    },
-    content: [
-      { type: 'paragraph', content: 'Fala galera 👋' },
-      {
-        type: 'paragraph',
-        content:
-          'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz  no NLW Return, evento da Rocketseat. O nome do projeto é IgniteFeed 🚀'
-      },
-      { type: 'link', content: 'maike-k/developer' }
-    ],
-    publishedAt: new Date('2022-08-25 10:13')
+    publishedAt: new Date('2023-05-16 18:00')
   }
 ]
 
